@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew & Bean - Artisan Coffee House</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">☕ Brew & Bean</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Crafted with Passion,<br>Served with Love</h1>
+            <p>Experience the finest artisan coffee in town</p>
+            <a href="#menu" class="btn-primary">View Our Menu</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>Our Story</h2>
+                    <p>Founded in 2015, Brew & Bean started with a simple mission: to serve exceptional coffee that brings people together. We source our beans directly from sustainable farms across three continents.</p>
+                    <p>Every cup is crafted by our skilled baristas who are passionate about the art of coffee making. From the perfect espresso shot to our signature lattes, we believe in quality over quantity.</p>
+                    <div class="features">
+                        <div class="feature">
+                            <span class="icon">🌱</span>
+                            <h3>Ethically Sourced</h3>
+                            <p>Direct trade with farmers</p>
+                        </div>
+                        <div class="feature">
+                            <span class="icon">🔥</span>
+                            <h3>Freshly Roasted</h3>
+                            <p>Small batch roasting</p>
+                        </div>
+                        <div class="feature">
+                            <span class="icon">❤️</span>
+                            <h3>Made with Love</h3>
+                            <p>Expert baristas</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-placeholder">Coffee Shop Interior</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menu Section -->
+    <section id="menu" class="menu">
+        <div class="container">
+            <h2>Our Menu</h2>
+            <p class="section-subtitle">Discover your perfect cup</p>
+            
+            <div class="menu-categories">
+                <button class="category-btn active" data-category="all">All</button>
+                <button class="category-btn" data-category="espresso">Espresso</button>
+                <button class="category-btn" data-category="specialty">Specialty</button>
+                <button class="category-btn" data-category="cold">Cold Brew</button>
+                <button class="category-btn" data-category="pastries">Pastries</button>
+            </div>
+
+            <div class="menu-grid">
+                <div class="menu-item" data-category="espresso">
+                    <div class="item-image">☕</div>
+                    <div class="item-info">
+                        <h3>Classic Espresso</h3>
+                        <p>Rich, bold, and perfectly extracted</p>
+                        <span class="price">$3.50</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="espresso">
+                    <div class="item-image">☕</div>
+                    <div class="item-info">
+                        <h3>Cappuccino</h3>
+                        <p>Espresso with steamed milk foam</p>
+                        <span class="price">$4.50</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="espresso">
+                    <div class="item-image">☕</div>
+                    <div class="item-info">
+                        <h3>Latte</h3>
+                        <p>Smooth espresso with velvety milk</p>
+                        <span class="price">$4.75</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="specialty">
+                    <div class="item-image">✨</div>
+                    <div class="item-info">
+                        <h3>Caramel Macchiato</h3>
+                        <p>Vanilla, espresso, and caramel drizzle</p>
+                        <span class="price">$5.25</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="specialty">
+                    <div class="item-image">✨</div>
+                    <div class="item-info">
+                        <h3>Mocha</h3>
+                        <p>Espresso with chocolate and whipped cream</p>
+                        <span class="price">$5.50</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cold">
+                    <div class="item-image">🧊</div>
+                    <div class="item-info">
+                        <h3>Cold Brew</h3>
+                        <p>Slow-steeped for 12 hours</p>
+                        <span class="price">$4.95</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="cold">
+                    <div class="item-image">🧊</div>
+                    <div class="item-info">
+                        <h3>Iced Latte</h3>
+                        <p>Chilled espresso with cold milk</p>
+                        <span class="price">$5.00</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pastries">
+                    <div class="item-image">🥐</div>
+                    <div class="item-info">
+                        <h3>Butter Croissant</h3>
+                        <p>Flaky, buttery, freshly baked</p>
+                        <span class="price">$3.75</span>
+                    </div>
+                </div>
+                <div class="menu-item" data-category="pastries">
+                    <div class="item-image">🧁</div>
+                    <div class="item-info">
+                        <h3>Blueberry Muffin</h3>
+                        <p>Bursting with fresh blueberries</p>
+                        <span class="price">$3.25</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Gallery</h2>
+            <p class="section-subtitle">A glimpse into our world</p>
+            
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Latte Art</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Coffee Beans</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Cozy Corner</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Barista at Work</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Fresh Pastries</div>
+                </div>
+                <div class="gallery-item">
+                    <div class="gallery-placeholder">Outdoor Seating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            
+            <div class="testimonial-grid">
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"The best coffee in town! The atmosphere is perfect for working or catching up with friends."</p>
+                    <div class="author">- Sarah M.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"Amazing latte art and even better taste. The staff is incredibly friendly and knowledgeable."</p>
+                    <div class="author">- James T.</div>
+                </div>
+                <div class="testimonial-card">
+                    <div class="stars">★★★★★</div>
+                    <p>"My go-to spot for morning coffee. The cold brew is absolutely fantastic!"</p>
+                    <div class="author">- Emily R.</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2>Visit Us</h2>
+                    <p>Come experience the Brew & Bean difference</p>
+                    
+                    <div class="info-item">
+                        <span class="icon">📍</span>
+                        <div>
+                            <h3>Location</h3>
+                            <p>123 Coffee Street<br>Downtown, CA 90210</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="icon">🕐</span>
+                        <div>
+                            <h3>Hours</h3>
+                            <p>Mon-Fri: 6am - 8pm<br>Sat-Sun: 7am - 9pm</p>
+                        </div>
+                    </div>
+                    
+                    <div class="info-item">
+                        <span class="icon">📞</span>
+                        <div>
+                            <h3>Contact</h3>
+                            <p>(555) 123-4567<br>hello@brewandbean.com</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <form class="contact-form" id="contactForm">
+                    <h3>Send us a Message</h3>
+                    <input type="text" placeholder="Your Name" required>
+                    <input type="email" placeholder="Your Email" required>
+                    <textarea placeholder="Your Message" rows="5" required></textarea>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>☕ Brew & Bean</h3>
+                    <p>Crafting moments, one cup at a time.</p>
+                </div>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">📘</a>
+                    <a href="#" aria-label="Instagram">📷</a>
+                    <a href="#" aria-label="Twitter">🐦</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Brew & Bean. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
